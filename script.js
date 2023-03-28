@@ -29,9 +29,9 @@ async function getdata(){
     
      var brand=document.getElementById('input').value;
     console.log(brand);
-     let url=`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`
-    var res=await fetch(url)
-    var res1=await res.json()
+     let url=`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`;
+    var res=await fetch(url);
+    var res1=await res.json();
     console.log(res1)
     for (var i=0;i<res1.length;i++){
     try{
